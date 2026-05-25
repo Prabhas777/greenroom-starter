@@ -25,6 +25,8 @@ If you're on Windows, run all the commands below in **Git Bash**, **PowerShell**
 
 ## Setup, step by step
 
+**Note for Reviewer: To test the AI Trust Engine, please create a .env file in the root directory and add your Anthropic API Key: ANTHROPIC_API_KEY=sk-ant-... (The app uses the claude-4-6-sonnet-latest model).**
+
 ### 1. Fork this repo to your own GitHub account
 
 Click the **Fork** button at the top right of [https://github.com/samay-cbh/greenroom-starter](https://github.com/samay-cbh/greenroom-starter). You'll get a copy under your own username.
