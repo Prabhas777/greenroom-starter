@@ -29,6 +29,7 @@ import {
 } from "@/lib/format";
 import type { Settlement, Recoup } from "@/db/schema";
 import { Logomark } from "@/components/brand/logo";
+import { AiTrustEngine } from "./ai-trust-engine";
 
 const RECOUP_LABELS: Record<Recoup["category"], string> = {
   marketing: "Marketing",
@@ -106,6 +107,8 @@ export default async function SettlePage({
           {formatShowDateFull(show.date)}
         </div>
       </div>
+
+      <AiTrustEngine showId={show.id} />
 
       {/* Disputed callout */}
       {isDisputed && disputedRecoupValue > 0 && (
